@@ -17,7 +17,7 @@ const Checkbox = ({ label, required, ...props }) => {
           {...field}
           {...props}
         />
-        <label className={["one", "two"].join()}>
+        <label>
           {label}
           {required && <b>*</b>}
         </label>
