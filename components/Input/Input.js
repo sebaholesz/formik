@@ -12,7 +12,7 @@ const Input = ({ label, required, ...props }) => {
         {required && <b>*</b>}
       </label>
       <input
-        className={[meta.error && meta.touched ? "error" : "", props.type].join(" ")}
+        className={meta.error && meta.touched ? "error" : ""}
         {...field}
         {...props}
       />
